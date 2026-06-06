@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-black-emerald: #111F18;
+  --color-black-leather: #253B26;
+  --color-knarloc: #4B5D41;
+  --color-bullfrog: #8B976B;
+  --color-marmite: #44201C;
+  --color-tool-green: #7C7913;
+  --color-text-light: #F5F5F0;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headings: "Manrope", sans-serif;
+  --font-display: "Playfair Display", serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111F18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #253B26;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4B5D41;
+}
+
+/* Sophisticated Dark styling utilities */
+.sophisticated-gradient {
+  background: radial-gradient(circle at 75% 33%, rgba(37, 59, 38, 0.5) 0%, rgba(17, 31, 24, 1) 100%);
+}
+
+.noise-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* Animation Utilities */
+.glass-panel {
+  background: rgba(37, 59, 38, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(139, 151, 107, 0.15);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 40px -10px rgba(124, 121, 19, 0.2);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #8B976B 0%, #7C7913 50%, #4B5D41 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-emerald {
+  background: linear-gradient(135deg, #F5F5F0 0%, #8B976B 60%, #4B5D41 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #111F18;
+  color: #F5F5F0;
+}

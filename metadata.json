@@ -1,0 +1,6 @@
+{
+  "name": "InAmigos Foundation",
+  "description": "Uniting Minds for Change — A premium, immersive storytelling and impact experience for InAmigos Foundation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
